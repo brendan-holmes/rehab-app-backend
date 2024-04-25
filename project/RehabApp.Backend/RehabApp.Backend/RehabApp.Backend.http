@@ -1,0 +1,31 @@
+@RehabApp.Backend_HostAddress = http://localhost:5259/api/injuries
+
+GET {{RehabApp.Backend_HostAddress}}/
+Accept: application/json
+
+###
+
+GET {{RehabApp.Backend_HostAddress}}/a39ec2fc-f500-412c-b934-ab79fb0113b5
+Accept: application/json
+
+###
+
+POST {{RehabApp.Backend_HostAddress}}
+Content-Type: application/json
+
+{
+    "Name": "injury1"
+}
+
+###
+
+PUT {{RehabApp.Backend_HostAddress}}/3f47fa66-24da-48ca-9a9b-498fec5deedb
+Content-Type: application/json
+
+{
+    "Name": "injury2"
+}
+
+###
+
+DELETE {{RehabApp.Backend_HostAddress}}/9621c521-0801-4cdc-a1b4-412ecb02dfc2
